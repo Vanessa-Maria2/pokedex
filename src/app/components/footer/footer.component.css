@@ -1,0 +1,25 @@
+footer {
+    margin-top: 643px;
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    background-color: #1d2c5e;
+    color: #ffb500;
+}
+
+.duvidas {
+    flex: 11;
+    margin: 20px;
+}
+
+.redes-sociais {
+    flex: 0.5; 
+    display: flex; 
+    justify-content: space-between;
+    margin-right: 20px;
+}
+
+.redes-sociais i {
+    margin:  20px 15px 0 15px;
+    color: #ffb500;
+}
