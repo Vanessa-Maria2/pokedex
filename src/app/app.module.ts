@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavBarModule } from './components/nav-bar/nav-bar.module';
 import { FooterModule } from './components/footer/footer.module';
+import { SearchBarModule } from './components/search-bar/search-bar.module';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { FooterModule } from './components/footer/footer.module';
     AppRoutingModule,
     BrowserAnimationsModule,
     NavBarModule, 
-    FooterModule
+    FooterModule,
+    SearchBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

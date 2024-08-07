@@ -1,0 +1,16 @@
+.example-form {
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+}
+
+.example-full-width {
+    width: 500px;
+}
+
+.button {
+    height: 57px;
+    background-color: #1d2c5e;
+    color: #ffb500;
+}
+

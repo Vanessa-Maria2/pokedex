@@ -1,0 +1,9 @@
+<form class="example-form">
+    <mat-form-field class="example-full-width">
+        <mat-label>Buscar</mat-label>
+        <input type="text" matInput [formControl]="textControl" class="input">
+    </mat-form-field>
+    <button mat-flat-button class="button" (click)="search()">
+        <mat-icon>search</mat-icon>
+    </button>
+</form>
