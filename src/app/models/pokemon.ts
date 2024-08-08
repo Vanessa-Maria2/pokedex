@@ -9,6 +9,6 @@ export type PokemonType = {
     weight: number;
     types: PokemonType[];
     abilities: PokemonAbility[];
-    species: Species[];
-    sprites: PokemonSprites[];
+    species: Species;
+    sprites: PokemonSprites;
 }
