@@ -1,10 +1,13 @@
-<form class="example-form">
+<form class="example-form" (submit)="onSearch($event)">
     <mat-form-field class="example-full-width">
         <mat-label>Buscar</mat-label>
         <input type="text" matInput [formControl]="textControl" class="input">
     </mat-form-field>
-    <button mat-flat-button class="button" (click)="search()">
+    <button mat-flat-button class="button">
         <mat-icon>search</mat-icon>
     </button>
 </form>
+<div *ngIf="errorMessage" class="error">
+   <p> {{ errorMessage }}</p>
+</div>
 <app-card-pokemon [pokemons]="pokemons"></app-card-pokemon>

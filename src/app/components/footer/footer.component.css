@@ -1,5 +1,4 @@
 footer {
-    margin-top: 643px;
     display: flex;
     flex-direction: row;
     font-size: 20px;
@@ -23,3 +22,4 @@ footer {
     margin:  20px 15px 0 15px;
     color: #ffb500;
 }
+
