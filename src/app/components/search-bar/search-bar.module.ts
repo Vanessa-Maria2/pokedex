@@ -6,8 +6,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatIconModule } from '@angular/material/icon';
 import { HttpClientModule } from '@angular/common/http';
-
-
+import { CardPokemonModule } from "../card-pokemon/card-pokemon.module";
 
 @NgModule({
   declarations: [
@@ -16,11 +15,12 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     CommonModule,
     MatInputModule,
-    ReactiveFormsModule, 
-    MatFormFieldModule, 
+    ReactiveFormsModule,
+    MatFormFieldModule,
     MatIconModule,
-    HttpClientModule
-  ],
+    HttpClientModule,
+    CardPokemonModule
+],
   exports: [SearchBarComponent]
 })
 export class SearchBarModule { }

@@ -8,5 +8,34 @@
 
 .example-card {
     flex: 0 0 auto;         
-    max-width: 300px;    
+    max-width: 300px;   
+    height: auto; 
+    background-color: #1d2c5e;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s ease-in-out;
+    border-radius: 8px; 
+    font-weight: bold;
+    color: azure;
 }
+
+.example-card:hover {
+    transform: scale(1.05); 
+}
+
+.img {
+    width: 250px;
+}
+
+.abilities {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.abilities-container {
+    display: flex;
+}
+
+mat-chip-set {
+    margin: 5px;
+}
+  
