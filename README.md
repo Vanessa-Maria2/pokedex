@@ -4,6 +4,9 @@ O projeto **Pokeapi** tem como objetivo criar uma aplicação que interaja com a
 
 Este projeto foi gerado com o [Angular CLI](https://github.com/angular/angular-cli) versão 16.2.14.
 
+## Acesso à aplicação
+A aplicação está hospedada e disponível em: [Pokedex](https://pokedex-chi-fawn.vercel.app/)
+
 ## Como executar o projeto
 
 Para iniciar a aplicação, siga os passos abaixo:
