@@ -7,7 +7,9 @@
         <mat-icon>search</mat-icon>
     </button>
 </form>
+<div class="spinner-container" *ngIf="(!pokemons || pokemons.length === 0) && !errorMessage">
+    <mat-spinner class="spinner"></mat-spinner>
+</div>
 <div *ngIf="errorMessage" class="error">
    <p> {{ errorMessage }}</p>
 </div>
-<app-card-pokemon [pokemons]="pokemons"></app-card-pokemon>

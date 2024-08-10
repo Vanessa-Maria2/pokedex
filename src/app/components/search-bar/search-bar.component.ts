@@ -1,5 +1,5 @@
 import { HttpClient } from '@angular/common/http';
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
 import { catchError, map, of } from 'rxjs';
 import { PokemonType } from 'src/app/models/pokemon';
@@ -14,6 +14,7 @@ export class SearchBarComponent implements OnInit {
   textControl = new FormControl('');
   apiUrl = 'https://pokeapi.co/api/v2/pokemon';
   pokemons: PokemonType[] = [];
+  @Output() pokemonsEmitter = new EventEmitter<PokemonType[]>();
   results: any[] = [];
   errorMessage: string | null = null;
   limit = 100;
@@ -30,6 +31,8 @@ export class SearchBarComponent implements OnInit {
     const query = this.textControl.value?.trim().toLowerCase();
     this.pokemons = [];
     this.errorMessage = null;
+    this.results = [];
+    this.pokemonsEmitter.emit(this.pokemons);
 
     if (query) {
       this.searchByPokemon(`${this.apiUrl}/${query}`);
@@ -62,8 +65,9 @@ export class SearchBarComponent implements OnInit {
       .subscribe(pokemon => {
         if (pokemon) {
           this.pokemons.push(pokemon);
+          this.pokemonsEmitter.emit(this.pokemons);
         }
       });
-    }
-    
+  }
+
 }

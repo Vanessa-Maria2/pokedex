@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { CardPokemonComponent } from './card-pokemon.component';
 import {MatCardModule} from '@angular/material/card';
 import { MatChipsModule } from '@angular/material/chips';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 
 @NgModule({
   declarations: [
@@ -10,7 +11,8 @@ import { MatChipsModule } from '@angular/material/chips';
   ],
   imports: [
     CommonModule, MatCardModule,
-    MatChipsModule
+    MatChipsModule,
+    MatProgressSpinnerModule
   ],
   exports: [CardPokemonComponent]
 })

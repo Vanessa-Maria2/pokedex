@@ -7,6 +7,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { MatIconModule } from '@angular/material/icon';
 import { HttpClientModule } from '@angular/common/http';
 import { CardPokemonModule } from "../card-pokemon/card-pokemon.module";
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+
 
 @NgModule({
   declarations: [
@@ -19,7 +21,8 @@ import { CardPokemonModule } from "../card-pokemon/card-pokemon.module";
     MatFormFieldModule,
     MatIconModule,
     HttpClientModule,
-    CardPokemonModule
+    CardPokemonModule,
+    MatProgressSpinnerModule
 ],
   exports: [SearchBarComponent]
 })

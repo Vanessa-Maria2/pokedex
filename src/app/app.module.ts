@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavBarModule } from './components/nav-bar/nav-bar.module';
 import { FooterModule } from './components/footer/footer.module';
-import { SearchBarModule } from './components/search-bar/search-bar.module';
+import { ListPokemonModule } from './components/list-pokemon/list-pokemon.module';
 
 @NgModule({
   declarations: [
@@ -18,7 +18,7 @@ import { SearchBarModule } from './components/search-bar/search-bar.module';
     BrowserAnimationsModule,
     NavBarModule, 
     FooterModule,
-    SearchBarModule
+    ListPokemonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
