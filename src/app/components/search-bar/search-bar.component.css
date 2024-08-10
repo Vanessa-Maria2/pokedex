@@ -9,9 +9,10 @@
 }
 
 .button {
-    height: 57px;
+    height: 56px;
     background-color: #1d2c5e;
     color: #ffb500;
+    border-top-right-radius: 6px;
 }
 
 .error {
